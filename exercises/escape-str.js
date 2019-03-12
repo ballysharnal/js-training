@@ -8,7 +8,7 @@
  */
 
 // Your code :
-const escapeStr = 'Ilove\'`/\\"coucou"'
+const escapeStr = 'Ilove\'`/\\"coucou'
 //* Begin of tests
 const assert = require('assert')
 
