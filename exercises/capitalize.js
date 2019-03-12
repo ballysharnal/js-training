@@ -6,14 +6,17 @@
  * and in lowercase for the rest of the string
  *
  */
-
+function capitalize(truc){
+    let machin = truc.charAt(0).toUpperCase()
+    return machin + truc.slice(1).toLowerCase()
+}
 
 //* Begin of tests
-const assert = require('assert')
+//const assert = require('assert')
 
-assert.strictEqual(typeof capitalize, "function")
-assert.strictEqual(capitalize('str'), 'Str')
-assert.strictEqual(capitalize('qsdqsdqsd'), 'Qsdqsdqsd')
-assert.strictEqual(capitalize('STR'), 'Str')
-assert.strictEqual(capitalize('zapZAP'), 'Zapzap')
+console.log(typeof capitalize, "function")
+console.log(capitalize('str'), 'Str')
+console.log(capitalize('qsdqsdqsd'), 'Qsdqsdqsd')
+console.log(capitalize('STR'), 'Str')
+console.log(capitalize('zapZAP'), 'Zapzap')
 // End of tests */

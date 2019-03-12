@@ -6,7 +6,7 @@
  *
  */
 
-
+let sentence = arrayString => arrayString.join(' ')
 //* Begin of tests
 const assert = require('assert')
 

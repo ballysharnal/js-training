@@ -8,21 +8,26 @@
  */
 
 // Your code :
-
+let obj = {
+    str : '1337',
+    num: 42,
+    bool: false,
+    undef: undefined
+}
 //* Begin of tests
 const assert = require('assert')
 
-assert.strictEqual(typeof obj, 'object')
+console.log(typeof obj, 'object')
 
-assert.strictEqual(typeof obj.str, 'string')
-assert.strictEqual(obj.str, '1337')
+console.log(typeof obj.str, 'string')
+console.log(obj.str, '1337')
 
-assert.strictEqual(typeof obj.num, 'number')
-assert.strictEqual(obj.num, 42)
+console.log(typeof obj.num, 'number')
+console.log(obj.num, 42)
 
-assert.strictEqual(typeof obj.bool, 'boolean')
-assert.strictEqual(obj.bool, false)
+console.log(typeof obj.bool, 'boolean')
+console.log(obj.bool, false)
 
-assert.strictEqual(typeof obj.undef, 'undefined')
-assert.strictEqual(obj.undef, undefined)
+console.log(typeof obj.undef, 'undefined')
+console.log(obj.undef, undefined)
 // End of tests */

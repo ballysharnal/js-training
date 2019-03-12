@@ -6,7 +6,7 @@
  * and wrapped by `*`
  *
  */
-
+const whisper = line => '*' + line.toLowerCase() + '*'
 
 //* Begin of tests
 const assert = require('assert')

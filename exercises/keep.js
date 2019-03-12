@@ -12,9 +12,9 @@
  *
  */
 
-
+const keepFirst = string => string[0] + string[1]
 //* Begin of tests
 const assert = require('assert')
-
+console.log(keepFirst('Blauiruruib eczf'))
 assert.fail('You must write your own tests')
 // End of tests */

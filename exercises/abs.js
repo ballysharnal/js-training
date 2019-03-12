@@ -11,15 +11,16 @@
 
 // Your code :
 
+let abs = number => number >= 0 ? number : -number
 //* Begin of tests
 const assert = require('assert')
 
-assert.strictEqual(typeof abs, 'function')
-assert.strictEqual(abs.toString().includes('Math.abs'), false)
-assert.notStrictEqual(abs, Math.abs)
-assert.strictEqual(abs.length, 1)
-assert.strictEqual(abs(0), 0)
-assert.strictEqual(abs(-1), 1)
-assert.strictEqual(abs(-13.2), 13.2)
-assert.strictEqual(abs(132), 132)
+console.log(assert.strictEqual(typeof abs, 'function'))
+console.log(assert.strictEqual(abs.toString().includes('Math.abs'), false))
+console.log(assert.notStrictEqual(abs, Math.abs))
+console.log(assert.strictEqual(abs.length, 1))
+console.log(assert.strictEqual(abs(0), 0))
+console.log(assert.strictEqual(abs(-1), 1))
+console.log(assert.strictEqual(abs(-13.2), 13.2))
+console.log(assert.strictEqual(abs(132), 132))
 // End of tests */

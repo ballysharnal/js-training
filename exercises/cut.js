@@ -9,7 +9,9 @@
  * @notions String methods
  * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
-
+const cutFirst = line => line.slice(2)
+const cutLast = line => line.substr(line.length - 1, 2)
+const cutFirstLast = line => line.slice(2).substr(line.length - 1, 2)
 //* Begin of tests
 const assert = require('assert')
 

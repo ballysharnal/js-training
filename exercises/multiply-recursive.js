@@ -10,7 +10,27 @@
  */
 
 // Your code :
-
+function multiply(num1, num2){
+    let result = 0
+    if (num1 > 0) {
+        while (num1 > 0){
+            result = result + num2
+            num1--
+        }
+    }else if (num1 < 0 && num2 > 0){
+        while (num1 < 0){
+            result = result - num2
+            num1++
+            
+        }
+    }else if (num1 < 0 && num2 < 0){
+        while (num1 < 0){
+            result = result - num2
+            num1++
+        }
+    }
+    return result
+}
 //* Begin of tests
 const assert = require('assert')
 

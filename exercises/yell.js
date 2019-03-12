@@ -6,6 +6,7 @@
  *
  */
 
+ const yell = truc => truc.toUpperCase()
 
 //* Begin of tests
 const assert = require('assert')

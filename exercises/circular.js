@@ -8,13 +8,16 @@
  */
 
 // Your code :
+let circular = {
+    circular: circular
+}
 
 //* Begin of tests
-const assert = require('assert')
+//const assert = require('assert')
 
-assert.strictEqual(typeof circular, 'object')
-assert.strictEqual(circular.circular, circular)
-assert.strictEqual(circular.circular.circular, circular)
-assert.strictEqual(circular.circular.circular.circular, circular)
-assert.strictEqual(circular.circular.circular.circular.circular, circular)
+console.log(typeof circular, 'object')
+console.log(circular.circular, circular)
+console.log(circular.circular.circular, circular)
+console.log(circular.circular.circular.circular, circular)
+console.log(circular.circular.circular.circular.circular, circular)
 // End of tests */

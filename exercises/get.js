@@ -15,15 +15,20 @@ const sourceObject = {
   log: console.log,
 }
 
+function get(bla){
+  return sourceObject[bla]
+}
+
+
 // Your code :
 
 //* Begin of tests
-const assert = require('assert')
+//const assert = require('assert')
 
-assert.strictEqual(typeof get, 'function')
-assert.strictEqual(get('num'), 42)
-assert.strictEqual(get('bool'), true)
-assert.strictEqual(get('str'), 'some text')
-assert.strictEqual(get('log'), console.log)
-assert.strictEqual(get('noexist'), undefined)
+console.log(typeof get, 'function')
+console.log(get('num'), 42)
+console.log(get('bool'), true)
+console.log(get('str'), 'some text')
+console.log(get('log'), console.log)
+console.log(get('noexist'), undefined)
 // End of tests */

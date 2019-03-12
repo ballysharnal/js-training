@@ -8,13 +8,15 @@
  */
 
 // Your code :
-
+function getLast(arrayString){
+    return arrayString[arrayString.length - 1]
+}
 //* Begin of tests
 const assert = require('assert')
 
-assert.strictEqual(getLast([ 2, 42 ]), 42)
-assert.strictEqual(getLast([ 'pouet', 4, true ]), true)
-assert.strictEqual(getLast([ getLast ]), getLast)
-assert.strictEqual(getLast('salut'), 't')
-assert.strictEqual(getLast([]), undefined)
+console.log(getLast([ 2, 42 ]), 42)
+console.log(getLast([ 'pouet', 4, true ]), true)
+console.log(getLast([ getLast ]), getLast)
+console.log(getLast('salut'), 't')
+console.log(getLast([]), undefined)
 // End of tests */

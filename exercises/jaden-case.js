@@ -10,7 +10,7 @@
  *
  */
 
-
+const jadenCase = string => string.toUpperCase()
 
 //* Begin of tests
 const assert = require('assert')

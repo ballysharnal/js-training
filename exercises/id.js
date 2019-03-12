@@ -7,7 +7,7 @@
  */
 
 // Your code :
-
+let id = truc => truc
 //* Begin of tests
 const assert = require('assert')
 
