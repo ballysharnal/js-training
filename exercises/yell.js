@@ -11,7 +11,6 @@
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
 assert.strictEqual(yell('blaBLA'), 'BLABLA')
 assert.strictEqual(yell('i love rock n roll'), 'I LOVE ROCK N ROLL')
 // End of tests */
