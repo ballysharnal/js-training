@@ -14,6 +14,6 @@ const jadenCase = string => string.toUpperCase()
 
 //* Begin of tests
 const assert = require('assert')
-console.log(cutFirstLast('abc'), 'ABC')
-console.log(cutFirstLast('Julia aime les pommes'), 'JULIA AIME LES POMMES')
+console.log(jadenCase('abc'), 'ABC')
+console.log(jadenCase('Julia aime les pommes'), 'JULIA AIME LES POMMES')
 // End of tests */
