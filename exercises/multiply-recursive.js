@@ -11,25 +11,15 @@
 
 // Your code :
 function multiply(num1, num2){
-    let result = 0
-    if (num1 > 0) {
-        while (num1 > 0){
-            result = result + num2
-            num1--
-        }
-    }else if (num1 < 0 && num2 > 0){
-        while (num1 < 0){
-            result = result - num2
-            num1++
-            
-        }
-    }else if (num1 < 0 && num2 < 0){
-        while (num1 < 0){
-            result = result - num2
-            num1++
-        }
+    if (!num1 || !num2){
+        return 0
     }
-    return result
+    if (num2 - 1 < 0){
+        return -num1 + multiply(num1, ++num2)
+    }else{
+        return num1 + multiply(num1, --num2)
+    }
+    
 }
 //* Begin of tests
 const assert = require('assert')
