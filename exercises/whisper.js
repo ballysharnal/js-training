@@ -11,6 +11,6 @@ const whisper = line => '*' + line.toLowerCase() + '*'
 //* Begin of tests
 const assert = require('assert')
 
-assert.strictEqual(yell('blaBLA'), '*blabla*')
-assert.strictEqual(yell('I NEED BANANAS'), '*i need bananas*')
+assert.strictEqual(whisper('blaBLA'), '*blabla*')
+assert.strictEqual(whisper('I NEED BANANAS'), '*i need bananas*')
 // End of tests */
