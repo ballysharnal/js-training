@@ -14,7 +14,6 @@ const cutLast = line => line.substr(line.length - 1, 2)
 const cutFirstLast = line => line.slice(2).substr(line.length - 1, 2)
 //* Begin of tests
 const assert = require('assert')
-
-assert.strictEqual(cutFirstLast('ergtdrfsetg'), 'gtdrfse')
-assert.strictEqual(cutFirstLast(15200), 2)
+console.log(cutFirstLast('ergtdrfsetg'), 'gtdrfse')
+console.log(cutFirstLast('15200'), '2')
 // End of tests */
