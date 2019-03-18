@@ -17,12 +17,20 @@ function repeat(string, nbr){
 //* Begin of tests
 const assert = require('assert')
 
-console.log(typeof repeat, 'function')
-console.log(repeat.length, 2)
-console.log(repeat.toString().includes('.repeat'), false)
-console.log(repeat('a', 3), 'aaa')
-console.log(repeat('ba', 10), 'babababababababababa')
-console.log(repeat('pouet', 2), 'pouetpouet')
-console.log(repeat('haha', 1), 'haha')
-console.log(repeat('hehehe', 0), '')
+
+assert.strictEqual(typeof repeat, 'function')
+
+assert.strictEqual(repeat.length, 2)
+
+assert.strictEqual(repeat.toString().includes('.repeat'), false)
+
+assert.strictEqual(repeat('a', 3), 'aaa')
+
+assert.strictEqual(repeat('ba', 10), 'babababababababababa')
+
+assert.strictEqual(repeat('pouet', 2), 'pouetpouet')
+
+assert.strictEqual(repeat('haha', 1), 'haha')
+
+assert.strictEqual(repeat('hehehe', 0), '')
 // End of tests */
