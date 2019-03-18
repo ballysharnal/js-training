@@ -16,9 +16,9 @@ function total(arrayNbr){
 //* Begin of tests
 const assert = require('assert')
 
-console.log(typeof total, 'function')
-console.log(total.length, 1)
-console.log(total([ 1, 1, 1]), 3)
-console.log(total([ 10, 10, 10]), 30)
-console.log(total([ 24, -10, 10, 0, 0, 100 ]), 124)
+assert.strictEqual(typeof total, 'function')
+assert.strictEqual(total.length, 1)
+assert.strictEqual(total([ 1, 1, 1]), 3)
+assert.strictEqual(total([ 10, 10, 10]), 30)
+assert.strictEqual(total([ 24, -10, 10, 0, 0, 100 ]), 124)
 // End of tests */
