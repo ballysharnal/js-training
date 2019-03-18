@@ -14,9 +14,13 @@ function capitalize(truc){
 //* Begin of tests
 //const assert = require('assert')
 
-console.log(typeof capitalize, "function")
-console.log(capitalize('str'), 'Str')
-console.log(capitalize('qsdqsdqsd'), 'Qsdqsdqsd')
-console.log(capitalize('STR'), 'Str')
-console.log(capitalize('zapZAP'), 'Zapzap')
+assert.strictEqual(typeof capitalize, "function")
+
+assert.strictEqual(capitalize('str'), 'Str')
+
+assert.strictEqual(capitalize('qsdqsdqsd'), 'Qsdqsdqsd')
+
+assert.strictEqual(capitalize('STR'), 'Str')
+
+assert.strictEqual(capitalize('zapZAP'), 'Zapzap')
 // End of tests */
