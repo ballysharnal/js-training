@@ -12,8 +12,12 @@ const add = (int1, int2) => int1 + int2
 
 const rand = Math.random()
 
-console.log(typeof add, 'function')
-console.log(add.length, 2)
-console.log(add(2, 2), 4)
-console.log(add(rand, rand), rand + rand)
+
+assert.strictEqual(typeof add, 'function')
+
+assert.strictEqual(add.length, 2)
+
+assert.strictEqual(add(2, 2), 4)
+
+assert.strictEqual(add(rand, rand), rand + rand)
 // End of tests */
