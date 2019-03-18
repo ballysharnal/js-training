@@ -19,15 +19,25 @@ function sameSign(arg1, arg2){
 //* Begin of tests
 const assert = require('assert')
 
-console.log(typeof sameSign, 'function')
-console.log(sameSign.length, 2)
+
+assert.strictEqual(typeof sameSign, 'function')
+
+assert.strictEqual(sameSign.length, 2)
 assert.notStrictEqual(sameSign, Math.sameSign)
-console.log(sameSign(-2, -1), true)
-console.log(sameSign(0, 0), true)
-console.log(sameSign(12, 3232), true)
-console.log(sameSign(1, -1), false)
-console.log(sameSign(-231, 1), false)
-console.log(sameSign(-231, 0), false)
-console.log(sameSign(0, 231), false)
-console.log(sameSign(231, -233), false)
+
+assert.strictEqual(sameSign(-2, -1), true)
+
+assert.strictEqual(sameSign(0, 0), true)
+
+assert.strictEqual(sameSign(12, 3232), true)
+
+assert.strictEqual(sameSign(1, -1), false)
+
+assert.strictEqual(sameSign(-231, 1), false)
+
+assert.strictEqual(sameSign(-231, 0), false)
+
+assert.strictEqual(sameSign(0, 231), false)
+
+assert.strictEqual(sameSign(231, -233), false)
 // End of tests */
