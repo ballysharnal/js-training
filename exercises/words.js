@@ -12,10 +12,16 @@ function words(string){
 //* Begin of tests
 const assert = require('assert')
 
-console.log(typeof words, 'function')
-console.log(words.length, 1)
-console.log(words('a b c'), [ 'a', 'b', 'c' ])
-console.log(words('a 1 c'), [ 'a', '1', 'c' ])
-console.log(words('a 1 c d e f'), [ 'a', '1', 'c', 'd', 'e', 'f' ])
-console.log(words('wol.lol lo,lol'), [ 'wol.lol', 'lo,lol'])
+
+assert.strictEqual(typeof words, 'function')
+
+assert.strictEqual(words.length, 1)
+
+assert.strictEqual(words('a b c'), [ 'a', 'b', 'c' ])
+
+assert.strictEqual(words('a 1 c'), [ 'a', '1', 'c' ])
+
+assert.strictEqual(words('a 1 c d e f'), [ 'a', '1', 'c', 'd', 'e', 'f' ])
+
+assert.strictEqual(words('wol.lol lo,lol'), [ 'wol.lol', 'lo,lol'])
 // End of tests */
